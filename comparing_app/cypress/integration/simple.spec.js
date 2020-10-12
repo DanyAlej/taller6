@@ -4,7 +4,7 @@ describe('Screenshots and button', function () {
         
         cy.visit('https://colors-e9fe4.web.app')
         cy.get('[onclick="randomPalette()"]').click()
-        cy.screenshot('pantallazo1')
+        cy.screenshot(`pantallazo1-${Cypress.env('id')}`)
        
     })
 
@@ -12,7 +12,7 @@ describe('Screenshots and button', function () {
         
         cy.visit('https://colors-e9fe4.web.app')
         cy.get('[onclick="randomPalette()"]').click()
-        cy.screenshot('pantallazo2')
+        cy.screenshot(`pantallazo2-${Cypress.env('id')}`)
        
     })
 })

@@ -21,8 +21,8 @@ async function getDiff() {
         //await fs.readFile("./images/logfailed2.png"),
         options
     );
-
-    await fs.writeFile("./output2.png", data.getBuffer());
+    console.log(data)
+    await fs.writeFile("./output3.png", data.getBuffer());
 }
 
 getDiff();
